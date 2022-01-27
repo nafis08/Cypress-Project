@@ -4,9 +4,11 @@
   "description": "My Project for Aklamio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run_spec": "npx cypress run --spec 'cypress/integration/first_test.spec.js'",
-    "cy:run_browser": "npm run cy:run_spec -- --browser chrome & npm run cy:run_spec -- --browser edge"
+    "test": "npx cypress run",
+    "chromeBrowser": "cypress run --browser chrome",
+   
+    "firefoxBrowser": "cypress run --browser chrome",
+    "mochawesomeReport": "cypress run --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
